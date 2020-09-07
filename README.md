@@ -2,15 +2,16 @@
 
 ## Requirements
 
-vim-plug
 python3
 fzf
 git
 golang
 zinit
+vim-plug
 
 ### Via Pip
-python-language-server
-pyls-black
-black
+rope pyflakes pycodestyle pydocstyle black pyls-black python-language-server
+
+### Via npm/yarn
+yaml-language-server bash-language-server
 

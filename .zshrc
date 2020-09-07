@@ -1,7 +1,6 @@
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status user host dir vcs dir_writable)
 POWERLEVEL9K_DISABLE_RPROMPT=true
 
-
 alias rm='rm -vr'
 
 source "$HOME/.zinit/bin/zinit.zsh"
@@ -11,7 +10,6 @@ autoload -Uz _zinit
 zinit ice svn multisrc'*.zsh'
 zinit snippet OMZ::lib
 zinit snippet OMZ::plugins/sudo/sudo.plugin.zsh
-zinit snippet OMZ::plugins/kubectl/kubectl.plugin.zsh
 zinit snippet OMZ::plugins/fzf/fzf.plugin.zsh
 
 zinit ice as'completion'
