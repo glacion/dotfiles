@@ -1,7 +1,6 @@
-require 'bootstrap'
-require 'plugin'
-require 'config'
-require 'binding'
-require 'diagnosticls'
-require 'go'
-require 'python'
+require("bootstrap")
+require("plugin")
+require("config")
+require("binding")
+require("lang/go")
+
