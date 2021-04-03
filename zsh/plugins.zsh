@@ -17,12 +17,10 @@ zinit snippet $omz/lib/completion.zsh
 zinit snippet $omz/lib/git.zsh
 zinit snippet $omz/lib/key-bindings.zsh
 zinit snippet $omz/lib/theme-and-appearance.zsh
+zinit snippet $omz/lib/history.zsh
 
 zinit snippet $omz/plugins/sudo/sudo.plugin.zsh
 zinit snippet $omz/plugins/fzf/fzf.plugin.zsh
-
-zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
-zinit snippet https://github.com/docker/compose/blob/master/contrib/completion/zsh/_docker-compose
 
 unset omz
 
