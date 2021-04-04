@@ -21,4 +21,4 @@ paru: git
 	rm -rf $tmp
 
 git:
-	sudo pacman -Syu git
+	sudo pacman -Syu git --noconfirm
