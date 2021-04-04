@@ -1,0 +1,9 @@
+export POETRY_VIRTUALENVS_IN_PROJECT="true"
+export PYTHONDONTWRITEBYTECODE=1
+export PYTHONUNBUFFERED=1
+
+export GOPATH=$HOME/.local/go
+
+export EDITOR=nvim
+export VISUAL=nvim
+

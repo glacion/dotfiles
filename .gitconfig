@@ -1,0 +1,10 @@
+[user]
+	name = "Ahmetcan Güvendiren"
+	email = ahmtcngvndrn@gmail.com
+	signingKey = BFE602435DFD5F534141426347CD40055975A624
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = master
+[pull]
+	rebase = true
