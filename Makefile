@@ -21,7 +21,6 @@ paru: git
 	git clone https://aur.archlinux.org/paru-bin.git ;\
 	cd paru-bin ;\
 	makepkg -si --noconfirm ;\
-	cd $HOME ;\
 
 git:
 	sudo pacman -Syu --noconfirm git 
