@@ -1,10 +1,10 @@
 default: dependencies config
 
 config:
-	cp -rv .config .gitconfig .profile .zprofile .zshrc ~/
+	cp -rvf .config .gitconfig .profile .zprofile .zshrc ~/
 
 dependencies: paru
-	paru -Syu \
+	paru -Syu --noconfirm \
 	fzf zsh picom-jonaburg-git \
 	lightdm lightdm-gtk-theme neovim-nightly-bin \
 	alacritty xorg-server rofi firefox \
@@ -21,4 +21,4 @@ paru: git
 	rm -rf $tmp
 
 git:
-	sudo pacman -Syu git --noconfirm
+	sudo pacman -Syu --noconfirm git 
