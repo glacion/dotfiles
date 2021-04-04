@@ -4,13 +4,11 @@ config:
 	cp -rvf .config .gitconfig .profile .zprofile .zshrc ~/
 
 font:
-	tmp=$(shell mktemp) ;\
-	cd $tmp ;\
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hasklig.zip ;\
 	unzip Hasklig.zip ;\
 	rm -rf *Windows* ;\
 	sudo mkdir -p /usr/local/share/fonts/hasklug ;\
-	mv *.otf /usr/local/share/fonts/hasklug/ ;\
+	sudo mv *.otf /usr/local/share/fonts/hasklug/ ;\
 	fc-cache -fv
 
 dependencies: paru
@@ -20,13 +18,10 @@ dependencies: paru
 	alacritty rofi qtile unzip
 
 paru: git
-	tmp=$(shell mktemp) ;\
-	cd $tmp ;\
 	git clone https://aur.archlinux.org/paru-bin.git ;\
 	cd paru-bin ;\
 	makepkg -si --noconfirm ;\
 	cd $HOME ;\
-	rm -rf $tmp
 
 git:
 	sudo pacman -Syu --noconfirm git 
