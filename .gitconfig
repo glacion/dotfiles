@@ -1,0 +1,12 @@
+[user]
+	email = can@glacion.com
+	name = Can Güvendiren
+	signingkey = can@glacion.com
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
