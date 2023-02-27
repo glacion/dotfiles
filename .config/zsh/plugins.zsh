@@ -1,7 +1,7 @@
 config=$HOME/.config/zsh
 
 if [ ! -d "${ZGENOM_DIR}" ]; then
-  git clone git@github.com:jandamm/zgenom.git "${ZGENOM_DIR}"
+  git clone https://github.com/jandamm/zgenom.git "${ZGENOM_DIR}"
 fi
 
 source "${ZGENOM_DIR}/zgenom.zsh"
