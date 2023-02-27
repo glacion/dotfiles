@@ -26,6 +26,9 @@ function kga {
   done
 }
 
+{% if yadm.os == "Darwin" %}
 function nerdctl {
   lima nerdctl "$@"
 }
+{% endif %}
+
