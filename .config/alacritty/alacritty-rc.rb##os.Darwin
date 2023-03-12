@@ -1,8 +1,8 @@
 # vi: ft=ruby
 
-cask "alacritty" do
-  version "0.12.0-rc1"
-  sha256 "6aeab1600e44f0408a2d010feeaee91ca154d82ca3e3f5d5fefea1aa073e9a19"
+cask "alacritty-rc" do
+  version "0.12.0-rc2"
+  sha256 "2370d30ebc1edf07d19b26e29e9cdc3a03604d63f43d287b8cd1938b3e662071"
 
   url "https://github.com/alacritty/alacritty/releases/download/v#{version}/Alacritty-v#{version}.dmg"
   name "Alacritty"
