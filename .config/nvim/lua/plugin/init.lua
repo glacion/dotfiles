@@ -1,6 +1,5 @@
 return {
   "echasnovski/mini.ai",
-  "echasnovski/mini.comment",
   "echasnovski/mini.move",
   "echasnovski/mini.pairs",
   "echasnovski/mini.surround",
@@ -22,6 +21,7 @@ return {
   "romgrk/barbar.nvim",
   "stevearc/dressing.nvim",
   "sunaku/tmux-navigate",
+  "terrortylor/nvim-comment",
   "williamboman/mason-lspconfig.nvim",
   "williamboman/mason.nvim",
 }
