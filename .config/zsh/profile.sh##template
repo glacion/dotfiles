@@ -17,7 +17,6 @@ ${PATH+:$PATH}"
 {% endif %}
 
 export EDITOR=nvim
-
+export LIBVIRT_DEFAULT_URI="qemu:///system"
 export GOPATH=$HOME/.local/share/go
-
 export ZGENOM_DIR=$HOME/.local/share/zgenom
