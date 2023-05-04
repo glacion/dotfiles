@@ -10,6 +10,7 @@ return {
       sources = {
         null.builtins.diagnostics.ansiblelint,
         null.builtins.diagnostics.luacheck,
+        null.builtins.formatting.prettier,
         null.builtins.formatting.stylua,
       },
     }

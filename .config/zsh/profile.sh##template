@@ -14,6 +14,10 @@ export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:\
 /opt/homebrew/bin:\
 /opt/homebrew/sbin:\
 ${PATH+:$PATH}"
+{% else %}
+export AWS_VAULT_BACKEND=pass
+AWS_VAULT_PASS_PASSWORD_STORE_DIR=aws
+export VAGRANT_DEFAULT_PROVIDER=libvirt
 {% endif %}
 
 export EDITOR=nvim

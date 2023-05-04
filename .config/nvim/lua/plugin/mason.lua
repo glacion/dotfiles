@@ -6,6 +6,7 @@ return {
       "dockerfile-language-server",
       "gopls",
       "luacheck",
+      "prettier",
       "stylua",
     },
     pip = {
