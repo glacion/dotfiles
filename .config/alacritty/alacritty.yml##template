@@ -37,6 +37,12 @@ colors:
 
 draw_bold_text_with_bright_colors: true
 
+font:
+  size: 14.0
+  normal:
+    family: Hasklug Nerd Font
+    style: SemiBold
+
 env:
   TERM: alacritty-direct
 {% if yadm.os == "Darwin" %}
@@ -44,12 +50,6 @@ env:
 {% else %}
   SHELL: /usr/bin/zsh
 {% endif %}
-
-font:
-  size: 14.0
-  normal:
-    family: Hasklug Nerd Font
-    style: Semibold
 
 scrolling:
   history: 0

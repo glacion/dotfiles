@@ -8,6 +8,7 @@ return {
     "saadparwaiz1/cmp_luasnip",
     "lukas-reineke/cmp-under-comparator",
     "onsails/lspkind-nvim",
+    "rafamadriz/friendly-snippets",
     "L3MON4D3/LuaSnip",
   },
 

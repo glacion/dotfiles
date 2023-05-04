@@ -18,6 +18,7 @@ return {
   "nvim-tree/nvim-tree.lua",
   "nvim-treesitter/nvim-treesitter",
   "olimorris/onedarkpro.nvim",
+  "rafamadriz/friendly-snippets",
   "romgrk/barbar.nvim",
   "stevearc/dressing.nvim",
   "sunaku/tmux-navigate",
