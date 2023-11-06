@@ -1,7 +1,6 @@
-local telescope = require("telescope.builtin")
-
 return {
   "nvim-telescope/telescope.nvim",
+  tag = "0.1.4",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",
@@ -18,23 +17,24 @@ return {
   keys = {
     {
       "<A-b>",
-      telescope.buffers,
+      function()
+        require("telescope.builtin").buffers()
+      end,
       desc = "Telescope buffers",
     },
     {
       "<A-f>",
-      telescope.find_files,
+      function()
+        require("telescope.builtin").find_files()
+      end,
       desc = "Telescope files",
     },
     {
       "<A-g>",
-      telescope.live_grep,
+      function()
+        require("telescope.builtin").live_grep()
+      end,
       desc = "Telescope live grep",
-    },
-    {
-      "<A-'>",
-      telescope.registers,
-      desc = "Telescope registers",
     },
   },
 }
