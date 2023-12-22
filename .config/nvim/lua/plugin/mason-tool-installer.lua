@@ -9,8 +9,6 @@ return {
       "luacheck",
       "prettierd",
       "ruff-lsp",
-      "rust_analyzer",
-      "rustfmt",
       "stylua",
       "terraform-ls",
     },

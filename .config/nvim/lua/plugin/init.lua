@@ -31,6 +31,7 @@ return {
   "rafamadriz/friendly-snippets",
   "romgrk/barbar.nvim",
   "saadparwaiz1/cmp_luasnip",
+  "simrat39/rust-tools.nvim",
   "stevearc/conform.nvim",
   "stevearc/dressing.nvim",
   "sunaku/tmux-navigate",

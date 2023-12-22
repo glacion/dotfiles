@@ -22,6 +22,7 @@ if ! zgenom saved; then
   zgenom oh-my-zsh plugins/fzf
 
   zgenom oh-my-zsh --completion plugins/terraform
+  zgenom oh-my-zsh --completion plugins/rust
 
   zgenom compile "${config}/prompt.zsh"
   zgenom compile "${config}/plugins.zsh"
