@@ -16,7 +16,7 @@ export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:\
 ${PATH+:$PATH}"
 {% else %}
 export AWS_VAULT_BACKEND=pass
-export AWS_VAULT_PASS_PASSWORD_STORE_DIR=aws
+export AWS_VAULT_PASS_PREFIX=aws
 export VAGRANT_DEFAULT_PROVIDER=libvirt
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 {% endif %}
