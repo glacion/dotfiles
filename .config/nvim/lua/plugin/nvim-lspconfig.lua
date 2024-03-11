@@ -30,12 +30,5 @@ return {
       vim.lsp.buf.code_action,
       desc = "Code actions",
     },
-    -- {
-    --   "<leader><leader>",
-    --   function()
-    --     vim.lsp.buf.format({ async = true })
-    --   end,
-    --   desc = "Format document",
-    -- },
   },
 }

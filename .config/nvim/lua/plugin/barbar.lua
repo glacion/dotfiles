@@ -1,6 +1,9 @@
 return {
   "romgrk/barbar.nvim",
-  event = { "BufReadPost", "BufNewFile" },
+  event = { 
+    "BufReadPost", 
+    "BufNewFile",
+  },
   dependencies = {
     "nvim-tree/nvim-tree.lua",
   },
