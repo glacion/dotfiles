@@ -10,7 +10,7 @@ source $HOME/.config/zsh/plugins.zsh
 
 alias vi="nvim"
 alias vim="nvim"
-alias ls="exa -lah"
+alias ls="eza -lAh"
 
 alias k="kubectl"
 alias kns="kubectl config set-context --current --namespace"
