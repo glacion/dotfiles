@@ -22,7 +22,8 @@ if ! zgenom saved; then
   zgenom oh-my-zsh plugins/sudo
   zgenom oh-my-zsh plugins/fzf
 
-  zgenom oh-my-zsh plugins/aws
+  zgenom oh-my-zsh plugins/gcloud
+  zgenom oh-my-zsh plugins/terragrunt
   zgenom oh-my-zsh plugins/terraform
   zgenom oh-my-zsh plugins/rust
 
