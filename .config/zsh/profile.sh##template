@@ -13,6 +13,7 @@ ${MANPATH+:$MANPATH}:"
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:\
 /opt/homebrew/bin:\
 /opt/homebrew/sbin:\
+/opt/homebrew/opt/ruby/bin:\
 ${PATH+:$PATH}"
 {% else %}
 export AWS_VAULT_BACKEND=pass
