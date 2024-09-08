@@ -1,7 +1,7 @@
 [user]
-	email = can@glacion.com
+	email = can.guvendiren@hubx.co
 	name = Can Güvendiren
-	signingkey = can@glacion.com
+	signingkey = can.guvendiren@hubx.co
 [commit]
 	gpgsign = true
 [init]

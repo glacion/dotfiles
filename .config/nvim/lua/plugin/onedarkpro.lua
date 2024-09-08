@@ -2,6 +2,7 @@ local color = require("color")
 
 return {
   "olimorris/onedarkpro.nvim",
+  tag = "treesitter-0.9.2",
   lazy = false,
   priority = 1000,
   opts = {

@@ -4,9 +4,11 @@ return {
   opts = {
     formatters_by_ft = {
       javascript = { "prettierd" },
+      json = { "prettierd" },
       lua = { "stylua" },
       markdown = { "prettierd" },
       rust = { "rustfmt" },
+      typescript = { "prettierd" },
       yaml = { "prettierd" },
     },
   },

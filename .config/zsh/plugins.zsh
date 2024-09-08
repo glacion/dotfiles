@@ -13,7 +13,6 @@ if ! zgenom saved; then
 
   zgenom load romkatv/powerlevel10k powerlevel10k
   zgenom load Aloxaf/fzf-tab
-  zgenom load jkavan/terragrunt-oh-my-zsh-plugin
   zgenom load zsh-users/zsh-autosuggestions
   zgenom load zsh-users/zsh-completions
   zgenom load zsh-users/zsh-syntax-highlighting
@@ -22,10 +21,19 @@ if ! zgenom saved; then
   zgenom oh-my-zsh plugins/sudo
   zgenom oh-my-zsh plugins/fzf
 
+  zgenom oh-my-zsh plugins/deno
   zgenom oh-my-zsh plugins/gcloud
-  zgenom oh-my-zsh plugins/terragrunt
+  zgenom oh-my-zsh plugins/kubectl
+  zgenom oh-my-zsh plugins/macos
+  zgenom oh-my-zsh plugins/node
+  zgenom oh-my-zsh plugins/npm
+  zgenom oh-my-zsh plugins/poetry
+  zgenom oh-my-zsh plugins/poetry-env
+  zgenom oh-my-zsh plugins/pre-commit
+  zgenom oh-my-zsh plugins/python
   zgenom oh-my-zsh plugins/terraform
-  zgenom oh-my-zsh plugins/rust
+
+  zgenom load jkavan/terragrunt-oh-my-zsh-plugin
 
   zgenom compile "${config}/prompt.zsh"
   zgenom compile "${config}/plugins.zsh"
