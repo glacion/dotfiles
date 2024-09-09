@@ -30,7 +30,6 @@ if ! zgenom saved; then
   zgenom oh-my-zsh plugins/pre-commit
   zgenom oh-my-zsh plugins/python
   zgenom oh-my-zsh plugins/terraform
-  zgenom oh-my-zsh plugins/terragrunt
   zgenom oh-my-zsh plugins/yarn
 
   zgenom load jkavan/terragrunt-oh-my-zsh-plugin
