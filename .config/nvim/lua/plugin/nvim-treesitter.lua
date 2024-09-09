@@ -1,6 +1,5 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  tag = "v0.9.2",
   build = ":TSUpdate",
   event = {
     "BufReadPost",
@@ -8,16 +7,15 @@ return {
   },
   dependencies = {
     "JoosepAlviste/nvim-ts-context-commentstring",
-    "mrjones2014/nvim-ts-rainbow",
+    "HiPhish/rainbow-delimiters.nvim",
   },
   opts = {
     ensure_installed = "all",
     highlight = {
       enable = true,
     },
-    rainbow = {
+    indent = {
       enable = true,
-      extended_mode = true,
     },
   },
   config = function(_, opts)

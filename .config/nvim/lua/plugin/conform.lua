@@ -7,7 +7,6 @@ return {
       json = { "prettierd" },
       lua = { "stylua" },
       markdown = { "prettierd" },
-      rust = { "rustfmt" },
       typescript = { "prettierd" },
       yaml = { "prettierd" },
     },

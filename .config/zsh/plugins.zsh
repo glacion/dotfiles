@@ -21,17 +21,17 @@ if ! zgenom saved; then
   zgenom oh-my-zsh plugins/sudo
   zgenom oh-my-zsh plugins/fzf
 
-  zgenom oh-my-zsh plugins/deno
+  zgenom oh-my-zsh plugins/asdf
   zgenom oh-my-zsh plugins/gcloud
   zgenom oh-my-zsh plugins/kubectl
   zgenom oh-my-zsh plugins/macos
   zgenom oh-my-zsh plugins/node
   zgenom oh-my-zsh plugins/npm
-  zgenom oh-my-zsh plugins/poetry
-  zgenom oh-my-zsh plugins/poetry-env
   zgenom oh-my-zsh plugins/pre-commit
   zgenom oh-my-zsh plugins/python
   zgenom oh-my-zsh plugins/terraform
+  zgenom oh-my-zsh plugins/terragrunt
+  zgenom oh-my-zsh plugins/yarn
 
   zgenom load jkavan/terragrunt-oh-my-zsh-plugin
 
