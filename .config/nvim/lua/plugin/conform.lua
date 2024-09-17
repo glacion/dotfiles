@@ -3,6 +3,7 @@ return {
   event = { "BufWritePre" },
   opts = {
     formatters_by_ft = {
+      hcl = { "hclfmt" },
       javascript = { "prettierd" },
       json = { "prettierd" },
       lua = { "stylua" },
