@@ -3,13 +3,10 @@ return {
   event = { "BufWritePre" },
   opts = {
     formatters_by_ft = {
-      hcl = { "hclfmt" },
-      javascript = { "prettierd" },
-      json = { "prettierd" },
+      json = { "prettier" },
       lua = { "stylua" },
-      markdown = { "prettierd" },
-      typescript = { "prettierd" },
-      yaml = { "prettierd" },
+      markdown = { "prettier" },
+      yaml = { "prettier" },
     },
   },
   keys = {

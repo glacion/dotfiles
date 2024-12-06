@@ -2,18 +2,26 @@ return {
   "hrsh7th/nvim-cmp",
 
   dependencies = {
+    "L3MON4D3/LuaSnip",
+    "folke/noice.nvim",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-nvim-lsp-document-symbol",
+    "hrsh7th/cmp-nvim-lsp-signature-help",
     "hrsh7th/cmp-path",
-    "saadparwaiz1/cmp_luasnip",
     "lukas-reineke/cmp-under-comparator",
+    "lukas-reineke/cmp-rg",
     "onsails/lspkind-nvim",
     "rafamadriz/friendly-snippets",
-    "L3MON4D3/LuaSnip",
+    "saadparwaiz1/cmp_luasnip",
   },
 
   config = function(_, opts)
-    require("cmp").setup(opts)
+    local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+    local cmp = require("cmp")
+
+    cmp.setup(opts)
+    cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
   end,
 
   opts = function()
@@ -22,19 +30,31 @@ return {
     local luasnip = require("luasnip")
 
     return {
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
+      },
       snippet = {
         expand = function(args)
           luasnip.lsp_expand(args.body)
         end,
       },
-
-      mapping = {
-        ["<CR>"] = cmp.mapping.confirm({ select = false }),
+      enabled = function()
+        -- disable completion in comments
+        local context = require("cmp.config.context")
+        -- keep command mode completion enabled when cursor is in a comment
+        if vim.api.nvim_get_mode().mode == "c" then
+          return true
+        else
+          return not context.in_treesitter_capture("comment")
+            and not context.in_syntax_group("Comment")
+        end
+      end,
+      mapping = cmp.mapping.preset.insert({
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<ESC>"] = cmp.mapping.abort(),
         ["<C-b>"] = cmp.mapping.scroll_docs(-4),
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
-
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
@@ -43,8 +63,7 @@ return {
           else
             fallback()
           end
-        end, { "i", "s" }),
-
+        end),
         ["<S-Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_prev_item()
@@ -53,34 +72,42 @@ return {
           else
             fallback()
           end
-        end, { "i", "s" }),
-      },
+        end),
+        ["<CR>"] = cmp.mapping({
+          i = function(fallback)
+            if cmp.visible() and cmp.get_active_entry() then
+              cmp.confirm({
+                behavior = cmp.ConfirmBehavior.Replace,
+                select = false,
+              })
+            else
+              fallback()
+            end
+          end,
+          s = cmp.mapping.confirm({ select = true }),
+          c = cmp.mapping.confirm({
+            behavior = cmp.ConfirmBehavior.Replace,
+            select = true,
+          }),
+        }),
+      }),
 
       formatting = {
         format = lspkind.cmp_format({
           mode = "symbol",
-          maxwidth = 64,
+          show_labelDetails = true,
+          maxwidth = function()
+            return math.floor(0.45 * vim.o.columns)
+          end,
         }),
-      },
-
-      sorting = {
-        comparators = {
-          cmp.config.compare.offset,
-          cmp.config.compare.exact,
-          cmp.config.compare.score,
-          require("cmp-under-comparator").under,
-          cmp.config.compare.kind,
-          cmp.config.compare.sort_text,
-          cmp.config.compare.length,
-          cmp.config.compare.order,
-        },
       },
 
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
+        { name = "rg" },
+        { name = "nvim_lsp_signature_help" },
+        { name = "nvim_lsp_document_symbol" },
         { name = "luasnip" },
-        { name = "path" },
-        { name = "buffer" },
       }),
     }
   end,

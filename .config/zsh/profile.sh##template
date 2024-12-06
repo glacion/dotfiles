@@ -9,13 +9,16 @@ export INFOPATH="/opt/homebrew/share/info:\
 ${INFOPATH:-}"
 export MANPATH="/opt/homebrew/share/man\
 ${MANPATH+:$MANPATH}:"
-export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:\
+export PATH="$HOME/.config/zsh/bin:\
+$HOME/.cargo/bin:\
+$HOME/.local/bin:\
+/opt/homebrew/opt/coreutils/libexec/gnubin:\
 /opt/homebrew/bin:\
 /opt/homebrew/sbin:\
-/opt/homebrew/opt/python@3.12/libexec/bin:\
-/opt/homebrew/opt/node@20/bin:\
 ${PATH+:$PATH}"
 
+export ZOXIDE_CMD_OVERRIDE=cd
 export EDITOR=nvim
 export GOPATH=$HOME/.local/share/go
+export TERRAFORM_BINARY_NAME=tofu
 export ZGENOM_DIR=$HOME/.local/share/zgenom

@@ -1,3 +1,8 @@
+-- https://github.com/nvim-tree/nvim-tree.lua/wiki/Auto-Close#eliasa5
+vim.api.nvim_create_autocmd({"QuitPre"}, {
+    callback = function() vim.cmd("NvimTreeClose") end,
+})
+
 return {
   "nvim-tree/nvim-tree.lua",
   dependencies = {

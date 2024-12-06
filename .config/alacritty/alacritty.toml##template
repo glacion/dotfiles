@@ -55,7 +55,7 @@ style = "SemiBold"
 [scrolling]
 history = 0
 
-[shell]
+[terminal.shell]
 args = ["-lc", "tmux new"]
 program = "/opt/homebrew/bin/zsh"
 

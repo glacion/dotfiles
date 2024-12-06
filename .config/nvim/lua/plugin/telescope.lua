@@ -13,6 +13,7 @@ return {
     telescope.setup(opts)
     telescope.load_extension("noice")
   end,
+  cmd = "Telescope",
   keys = {
     {
       "<A-b>",

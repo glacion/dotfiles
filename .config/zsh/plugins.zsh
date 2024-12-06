@@ -12,7 +12,6 @@ if ! zgenom saved; then
   zgenom oh-my-zsh
 
   zgenom load romkatv/powerlevel10k powerlevel10k
-  zgenom load Aloxaf/fzf-tab
   zgenom load zsh-users/zsh-autosuggestions
   zgenom load zsh-users/zsh-completions
   zgenom load zsh-users/zsh-syntax-highlighting
@@ -27,15 +26,19 @@ if ! zgenom saved; then
   zgenom oh-my-zsh plugins/macos
   zgenom oh-my-zsh plugins/node
   zgenom oh-my-zsh plugins/npm
-  zgenom oh-my-zsh plugins/pre-commit
   zgenom oh-my-zsh plugins/python
-  zgenom oh-my-zsh plugins/terraform
-  zgenom oh-my-zsh plugins/yarn
+  zgenom oh-my-zsh plugins/rust
+  zgenom oh-my-zsh plugins/zoxide
 
-  zgenom load jkavan/terragrunt-oh-my-zsh-plugin
+  zgenom load Aloxaf/fzf-tab
 
   zgenom compile "${config}/prompt.zsh"
   zgenom compile "${config}/plugins.zsh"
 
   zgenom save
 fi
+
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+zstyle ':completion:*:git-checkout:*' sort false
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu no
