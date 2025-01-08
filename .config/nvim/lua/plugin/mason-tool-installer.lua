@@ -4,7 +4,7 @@ return {
     auto_update = true,
     ensure_installed = {
       "dockerfile-language-server",
-      "eslint_d",
+      "eslint",
       "gopls",
       "hadolint",
       "jedi-language-server",

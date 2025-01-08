@@ -7,6 +7,8 @@ return {
       lua = { "stylua" },
       markdown = { "prettier" },
       yaml = { "prettier" },
+      typescript = { "prettier" },
+      javascript = { "prettier" },
     },
   },
   keys = {

@@ -2,8 +2,8 @@ return {
   "mfussenegger/nvim-lint",
   opts = {
     lua = { "luacheck" },
-    typescript = { "eslint_d" },
-    javascript = { "eslint_d" },
+    typescript = { "eslint" },
+    javascript = { "eslint" },
   },
   config = function(_, opts)
     local lint = require("lint")

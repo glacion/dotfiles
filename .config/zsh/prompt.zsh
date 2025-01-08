@@ -11,6 +11,7 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=white'
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
 
 typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+    prompt_char
     user
     host
     dir
@@ -19,6 +20,9 @@ typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     newline
     status
 )
+
+typeset -g POWERLEVEL9K_PROMPT_CHAR_BACKGROUND=$yellow
+typeset -g POWERLEVEL9K_PROMPT_CHAR_FOREGROUND=$black
 
 typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 

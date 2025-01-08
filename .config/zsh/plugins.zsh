@@ -12,12 +12,12 @@ if ! zgenom saved; then
   zgenom oh-my-zsh
 
   zgenom load romkatv/powerlevel10k powerlevel10k
-  zgenom load zsh-users/zsh-autosuggestions
-  zgenom load zsh-users/zsh-completions
-  zgenom load zsh-users/zsh-syntax-highlighting
   zgenom load "${config}/completions"
+  zgenom load zsh-users/zsh-completions
+  zgenom load zsh-users/zsh-autosuggestions
+  zgenom load zsh-users/zsh-syntax-highlighting
+  zgenom load softmoth/zsh-vim-mode
 
-  zgenom oh-my-zsh plugins/sudo
   zgenom oh-my-zsh plugins/fzf
 
   zgenom oh-my-zsh plugins/asdf
