@@ -20,14 +20,16 @@ if ! zgenom saved; then
 
   zgenom oh-my-zsh plugins/fzf
 
-  zgenom oh-my-zsh plugins/asdf
   zgenom oh-my-zsh plugins/gcloud
+  zgenom oh-my-zsh plugins/gh
   zgenom oh-my-zsh plugins/kubectl
   zgenom oh-my-zsh plugins/macos
+  zgenom oh-my-zsh plugins/mise
   zgenom oh-my-zsh plugins/node
   zgenom oh-my-zsh plugins/npm
   zgenom oh-my-zsh plugins/python
-  zgenom oh-my-zsh plugins/rust
+  zgenom oh-my-zsh plugins/tmux
+  zgenom oh-my-zsh plugins/uv
   zgenom oh-my-zsh plugins/zoxide
 
   zgenom load Aloxaf/fzf-tab

@@ -1,21 +1,26 @@
 return {
   "WhoIsSethDaniel/mason-tool-installer.nvim",
+  dependencies = {
+    "williamboman/mason.nvim",
+  },
   opts = {
     auto_update = true,
     ensure_installed = {
+      "basedpyright",
+      "biome",
+      "bash-language-server",
       "dockerfile-language-server",
-      "eslint",
-      "gopls",
       "hadolint",
-      "jedi-language-server",
-      "prettier",
+      "lua-language-server",
+      "luacheck",
       "ruff",
       "rust-analyzer",
+      "shellcheck",
+      "shfmt",
       "stylua",
-      "typescript-language-server",
+      "taplo",
+      "vtsls",
+      "yaml-language-server",
     },
-  },
-  dependencies = {
-    "williamboman/mason.nvim",
   },
 }

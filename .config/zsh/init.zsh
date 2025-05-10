@@ -1,6 +1,7 @@
 zstyle ':omz:update' mode disabled
 setopt interactivecomments
 
+source $HOME/.config/zsh/profile.sh
 source $HOME/.config/zsh/plugins.zsh
 
 alias vi="nvim"
@@ -17,4 +18,3 @@ function kga {
     kubectl -n ${1} get --ignore-not-found ${i}
   done
 }
-

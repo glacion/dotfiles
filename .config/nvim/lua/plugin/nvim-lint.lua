@@ -1,9 +1,8 @@
 return {
   "mfussenegger/nvim-lint",
   opts = {
+    dockerfile = { "hadolint" },
     lua = { "luacheck" },
-    typescript = { "eslint" },
-    javascript = { "eslint" },
   },
   config = function(_, opts)
     local lint = require("lint")
