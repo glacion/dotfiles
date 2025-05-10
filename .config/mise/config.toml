@@ -1,0 +1,10 @@
+[tools]
+jq = "latest"
+kustomize = "latest"
+mongosh = "latest"
+node = "23"
+opentofu = "latest"
+pnpm = "latest"
+python = "latest"
+uv = "latest"
+yt-dlp = "latest"
