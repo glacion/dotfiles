@@ -6,17 +6,15 @@ return {
     "BufNewFile",
   },
   dependencies = {
-    "JoosepAlviste/nvim-ts-context-commentstring",
-    "mrjones2014/nvim-ts-rainbow",
+    "HiPhish/rainbow-delimiters.nvim",
   },
   opts = {
     ensure_installed = "all",
     highlight = {
       enable = true,
     },
-    rainbow = {
+    indent = {
       enable = true,
-      extended_mode = true,
     },
   },
   config = function(_, opts)

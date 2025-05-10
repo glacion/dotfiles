@@ -3,6 +3,7 @@ return {
   opts = {
     "css",
     "javascript",
+    "typescript",
     html = {
       mode = "foreground",
     },

@@ -1,0 +1,13 @@
+vim.lsp.inlay_hint.enable()
+vim.lsp.enable({
+  "basedpyright",
+  "bashls",
+  "biome",
+  "dockerls",
+  "lua_ls",
+  "ruff",
+  "rust_analyzer",
+  "taplo",
+  "vtsls",
+  "yamlls",
+})
