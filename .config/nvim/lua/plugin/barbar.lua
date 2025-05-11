@@ -21,8 +21,6 @@ return {
     { "<A-.>", "<CMD>BufferNext<CR>" },
     { "<A-<>", "<CMD>BufferMovePrevious<CR>" },
     { "<A->>", "<CMD>BufferMoveNext<CR>" },
-    { "<A-w>", "<CMD>BufferClose<CR>" },
-    { "<A-W>", "<CMD>BufferRestore<CR>" },
     { "<C-s>", "<CMD>silent! write<CR>" },
   },
 }

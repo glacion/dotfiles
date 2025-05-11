@@ -1,47 +1,30 @@
-local colors = require("color")
+local color = require("color")
 
 local onedark = {
   normal = {
-    a = {
-      fg = colors.background,
-      bg = colors.yellow,
-      gui = "bold",
-    },
-    b = {
-      fg = colors.foreground,
-      bg = colors.background_light,
-      gui = "bold",
-    },
-    c = { fg = colors.foreground, bg = colors.background, gui = "bold" },
-    x = { fg = colors.foreground, bg = colors.background, gui = "bold" },
-    y = { fg = colors.foreground, bg = colors.background_light, gui = "bold" },
-    z = { fg = colors.foreground, bg = colors.background_light, gui = "bold" },
+    a = { fg = color.bg, bg = color.yellow },
+    b = { fg = color.bg, bg = color.cyan },
+    c = { fg = color.fg, bg = color.bg },
+    x = { fg = color.fg, bg = color.bg },
+    y = { fg = color.fg, bg = color.bg_statusline },
+    z = { fg = color.bg, bg = color.red },
   },
-  command = {
-    a = { fg = colors.background, bg = colors.yellow, gui = "bold" },
-  },
-  insert = {
-    a = { fg = colors.background, bg = colors.blue, gui = "bold" },
-  },
-  visual = {
-    a = { fg = colors.background, bg = colors.magenta, gui = "bold" },
-  },
-  terminal = {
-    a = { fg = colors.background, bg = colors.cyan, gui = "bold" },
-  },
-  replace = { a = { fg = colors.background, bg = colors.red, gui = "bold" } },
+  command = { a = { fg = color.bg, bg = color.red } },
+  insert = { a = { fg = color.bg, bg = color.blue } },
+  visual = { a = { fg = color.bg, bg = color.purple } },
+  terminal = { a = { fg = color.bg, bg = color.cyan } },
+  replace = { a = { fg = color.bg, bg = color.red } },
 }
 
 return {
   "nvim-lualine/lualine.nvim",
-  dependencies = {
-    "folke/noice.nvim",
-  },
+  dependencies = { "folke/noice.nvim" },
   opts = {
     extensions = {
+      "lazy",
+      "mason",
       "nvim-tree",
-      "quickfix",
-      -- "nvim-dap-ui", -- TODO: remember this
+      "trouble",
     },
     options = {
       theme = onedark,
@@ -50,17 +33,15 @@ return {
     sections = {
       lualine_a = { "mode" },
       lualine_b = { "branch" },
-      lualine_c = {
-        -- { { gps.get_location, cond = gps.is_available } },
-      },
+      lualine_c = {},
       lualine_x = {
         {
           require("noice").api.status.message.get_hl,
           cond = require("noice").api.status.message.has,
         },
       },
-      lualine_y = { "encoding", "fileformat", "filetype" },
-      lualine_z = { "diagnostics" },
+      lualine_y = { "encoding", "filetype" },
+      lualine_z = { "diagnostics", "lsp_status" },
     },
   },
 }

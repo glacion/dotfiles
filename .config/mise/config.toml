@@ -2,7 +2,7 @@
 jq = "latest"
 kustomize = "latest"
 mongosh = "latest"
-node = "23"
+node = "lts"
 opentofu = "latest"
 pnpm = "latest"
 python = "latest"
