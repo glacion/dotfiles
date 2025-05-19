@@ -1,9 +1,9 @@
-black='#1e2127'
-black_light='#282c34'
-cyan='#56b6c2'
-blue='#61afef'
-red='#e06c75'
-yellow='#d19a66'
+black='#111216'
+black_light='#16181d'
+cyan='#3fa3b0'
+blue='#3c9ceb'
+red='#d94a55'
+yellow='#deb059'
 
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[comment]='fg=white'

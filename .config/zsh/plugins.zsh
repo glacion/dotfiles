@@ -28,6 +28,7 @@ if ! zgenom saved; then
   zgenom oh-my-zsh plugins/node
   zgenom oh-my-zsh plugins/npm
   zgenom oh-my-zsh plugins/python
+  zgenom oh-my-zsh plugins/tmux
   zgenom oh-my-zsh plugins/uv
   zgenom oh-my-zsh plugins/zoxide
 
@@ -39,6 +40,7 @@ if ! zgenom saved; then
   zgenom save
 fi
 
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
