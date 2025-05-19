@@ -8,15 +8,16 @@ return {
     "typescript.tsx",
   },
   root_markers = {
-    ".git",
-    "package-lock.json",
     "pnpm-lock.json",
+    "package-lock.json",
     "tsconfig.json",
+    ".git",
   },
   settings = {
     vtsls = { autoUseWorkspaceTsdk = true },
 
     javascript = {
+      format = { enable = false },
       preferences = {
         importModuleSpecifier = "non-relative",
         importModuleSpecifierEnding = "auto",
@@ -31,10 +32,7 @@ return {
       },
     },
     typescript = {
-      preferences = {
-        importModuleSpecifier = "non-relative",
-        importModuleSpecifierEnding = "auto",
-      },
+      format = { enable = false },
       inlayHints = {
         enumMemberValues = { enabled = true },
         functionLikeReturnTypes = { enabled = true },
@@ -42,6 +40,10 @@ return {
         parameterTypes = { enabled = true },
         propertyDeclarationTypes = { enabled = true },
         variableTypes = { enabled = true },
+      },
+      preferences = {
+        importModuleSpecifier = "non-relative",
+        importModuleSpecifierEnding = "auto",
       },
     },
   },

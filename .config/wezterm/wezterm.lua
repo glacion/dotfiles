@@ -18,5 +18,7 @@ require("tabline").apply_to_config(config)
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   config.default_domain = "WSL:archlinux"
+elseif wezterm.target_triple == "aarch64-apple-darwin" then
+  config.font_size = 14
 end
 return config

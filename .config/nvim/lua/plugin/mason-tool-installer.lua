@@ -7,8 +7,9 @@ return {
     auto_update = true,
     ensure_installed = {
       "basedpyright",
-      "biome",
       "bash-language-server",
+      "biome",
+      "bzl",
       "dockerfile-language-server",
       "hadolint",
       "lua-language-server",

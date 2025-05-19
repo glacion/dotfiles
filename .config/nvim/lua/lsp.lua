@@ -3,6 +3,7 @@ vim.lsp.enable({
   "basedpyright",
   "bashls",
   "biome",
+  "buck2",
   "dockerls",
   "lua_ls",
   "ruff",

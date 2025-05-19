@@ -25,4 +25,4 @@ export VIM_MODE_ESC_PREFIXED_WANTED='^?^Hbdfhul.g'
 export ZGENOM_DIR=$HOME/.local/share/zgenom
 export ZOXIDE_CMD_OVERRIDE=cd
 export ZSH_TMUX_AUTOCONNECT=false
-export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOSTART=false
