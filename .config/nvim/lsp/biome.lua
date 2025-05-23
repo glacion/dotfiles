@@ -1,6 +1,7 @@
 ---@type vim.lsp.Config
 return {
   cmd = { "biome", "lsp-proxy" },
+  single_file_support = false,
   filetypes = {
     "astro",
     "css",
@@ -22,5 +23,4 @@ return {
     "pnpm-lock.json",
     "tsconfig.json",
   },
-  single_file_support = false,
 }

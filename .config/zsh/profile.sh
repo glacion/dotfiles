@@ -7,13 +7,12 @@ export INFOPATH="/opt/homebrew/share/info:$INFOPATH"
 export MANPATH="/opt/homebrew/share/man:$MANPATH"
 
 export PATH="$HOME/.config/zsh/bin:\
-$HOME/.local/bin:\
-$HOME/.asdf/shims:\
 $HOME/.cargo/bin:\
-/opt/homebrew/opt/rustup/bin:\
+$HOME/.local/bin:\
+/opt/homebrew/bin:\
 /opt/homebrew/opt/coreutils/libexec/gnubin:\
 /opt/homebrew/opt/postgresql@17/bin:\
-/opt/homebrew/bin:\
+/opt/homebrew/opt/rustup/bin:\
 /opt/homebrew/sbin:\
 $PATH"
 

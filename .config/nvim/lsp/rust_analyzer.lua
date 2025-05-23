@@ -2,21 +2,18 @@
 return {
   cmd = { "rust-analyzer" },
   filetypes = { "rust" },
-  root_markers = {
-    "Cargo.lock",
-    ".git",
-  },
+  root_markers = { "Cargo.lock" },
   single_file_support = true,
   settings = {
     ["rust-analyzer"] = {
-      completion = {
-        fullFunctionSignatures = { enable = true },
-        privateEditable = { enable = true },
-        termSearch = { enable = true },
-        hideDeprecated = true,
-      },
       diagnostics = { styleLints = { enable = true } },
       hover = { actions = { references = { enable = true } } },
+      completion = {
+        fullFunctionSignatures = { enable = true },
+        hideDeprecated = true,
+        privateEditable = { enable = true },
+        termSearch = { enable = true },
+      },
       inlayHints = {
         bindingModeHints = { enable = true },
         closureCaptureHints = { enable = true },

@@ -2,13 +2,13 @@
 return {
   cmd = { "basedpyright-langserver", "--stdio" },
   filetypes = { "python" },
+  single_file_support = true,
   root_markers = {
     "pylock.toml",
     "uv.lock",
     "requirements.txt",
     ".git",
   },
-  single_file_support = true,
   settings = {
     basedpyright = {
       disableOrganizeImports = true,

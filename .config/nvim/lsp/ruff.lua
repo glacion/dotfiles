@@ -2,6 +2,7 @@
 return {
   cmd = { "ruff", "server" },
   filetypes = { "python" },
+  single_file_support = true,
   root_markers = {
     "ruff.toml",
     "pylock.toml",
@@ -9,5 +10,4 @@ return {
     "requirements.txt",
     ".git",
   },
-  single_file_support = true,
 }

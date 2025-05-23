@@ -1,6 +1,7 @@
 ---@type vim.lsp.Config
 return {
   cmd = { "vtsls", "--stdio" },
+  single_file_support = true,
   filetypes = {
     "javascript",
     "typescript",
@@ -18,10 +19,6 @@ return {
 
     javascript = {
       format = { enable = false },
-      preferences = {
-        importModuleSpecifier = "non-relative",
-        importModuleSpecifierEnding = "auto",
-      },
       inlayHints = {
         enumMemberValues = { enabled = true },
         functionLikeReturnTypes = { enabled = true },
@@ -29,6 +26,11 @@ return {
         parameterTypes = { enabled = true },
         propertyDeclarationTypes = { enabled = true },
         variableTypes = { enabled = true },
+      },
+      preferences = {
+        importModuleSpecifier = "non-relative",
+        importModuleSpecifierEnding = "auto",
+        preferTypeOnlyAutoImports = true,
       },
     },
     typescript = {
@@ -44,8 +46,8 @@ return {
       preferences = {
         importModuleSpecifier = "non-relative",
         importModuleSpecifierEnding = "auto",
+        preferTypeOnlyAutoImports = true,
       },
     },
   },
-  single_file_support = true,
 }
