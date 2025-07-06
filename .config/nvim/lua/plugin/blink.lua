@@ -1,6 +1,6 @@
 return {
   "Saghen/blink.cmp",
-  version = "v1.1.1",
+  version = "v1.4.1",
   opts_extend = { "sources.default" },
   opts = {
     appearance = {

@@ -8,8 +8,6 @@ return {
     ensure_installed = {
       "basedpyright",
       "bash-language-server",
-      "biome",
-      "bzl",
       "dockerfile-language-server",
       "hadolint",
       "lua-language-server",

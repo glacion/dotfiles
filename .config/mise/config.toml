@@ -1,5 +1,8 @@
 [tools]
 bazelisk = "latest"
+cookiecutter = "2.6.0"
+go = "latest"
+helm = "latest"
 jq = "latest"
 k9s = "latest"
 kustomize = "latest"
@@ -9,8 +12,14 @@ neovim = "stable"
 node = "lts"
 opentofu = "latest"
 pnpm = "latest"
+pre-commit = "latest"
 python = "latest"
+redis-cli = "7.4.4"
 rg = "latest"
 uv = "latest"
 yt-dlp = "latest"
 zoxide = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = []
+experimental = true
